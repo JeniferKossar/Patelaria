@@ -7,3 +7,7 @@ coverage/
 .env*
 !.env.example
 .env.local
+*.docx
+src/dataconnect-generated/README.md
+src/dataconnect-generated/react/README.md
+Etapa_2_Execucao_Projeto_Pastelaria.md
