@@ -31,7 +31,7 @@ function getLoginErrorMessage(error: unknown) {
 }
 
 export const LoginView: React.FC<{ authStatusError?: string | null }> = ({ authStatusError }) => {
-  const [email, setEmail] = useState('adm@teste.com');
+  const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [mostrarSenha, setMostrarSenha] = useState(false);
   const [erro, setErro] = useState<string | null>(null);
