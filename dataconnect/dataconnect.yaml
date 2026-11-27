@@ -1,5 +1,5 @@
 specVersion: "v1"
-serviceId: "pastelaria-projeto"
+serviceId: "SEU_SERVICE_ID"
 location: "southamerica-east1"
 schemas:
   - source: "./schema"
@@ -7,7 +7,7 @@ schemas:
       postgresql:
         database: "fdcdb"
         cloudSql:
-          instanceId: "pastelaria-projeto-fdc"
+          instanceId: "SEU_INSTANCE_ID"
           # schemaValidation: "STRICT"     # STRICT mode makes Postgres schema match Data Connect exactly.
           # schemaValidation: "COMPATIBLE" # COMPATIBLE mode makes Postgres schema compatible with Data Connect.
 connectorDirs: ["./example"]
