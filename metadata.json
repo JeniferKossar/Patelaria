@@ -1,0 +1,8 @@
+{
+  "name": "Mesa Viva - ERP para Pastelaria",
+  "description": "Sistema integrado de gestão para pastelarias: Pedido ágil no salão, Cozinha Kanban, Estoque automatizado com Ficha Técnica, Cardápio e Controle Financeiro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
