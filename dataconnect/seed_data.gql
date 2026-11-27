@@ -1,0 +1,2 @@
+# Application records are created from the authenticated app and migrated from
+# the existing Firestore state. Do not seed fabricated orders or transactions.
