@@ -1,0 +1,13 @@
+query GetCurrentUserAppState @auth(level: USER) {
+  appStates(where: { ownerUid: { eq_expr: "auth.uid" } }) {
+    state
+  }
+}
+
+mutation SaveCurrentUserAppState($state: Any!) @auth(level: USER) {
+  appState_upsert(data: {
+    ownerUid_expr: "auth.uid"
+    state: $state
+    updatedAt_expr: "request.time"
+  })
+}
