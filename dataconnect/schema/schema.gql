@@ -1,0 +1,44 @@
+type AppState @table(key: ["ownerUid"]) {
+  ownerUid: String!
+  state: Any!
+  updatedAt: Timestamp!
+}
+
+type MenuItem @table {
+  name: String!
+  price: Float!
+  category: String!
+  isAvailable: Boolean!
+  description: String
+  imageUrl: String
+}
+
+type InventoryItem @table {
+  itemName: String!
+  currentQuantity: Float!
+  minThreshold: Float!
+  menuItem: MenuItem
+}
+
+type Order @table {
+  totalAmount: Float!
+  status: String!
+  paymentMethod: String!
+  customerName: String
+  createdAt: Timestamp!
+}
+
+type OrderItem @table {
+  quantity: Int!
+  priceAtPurchase: Float!
+  order: Order!
+  menuItem: MenuItem!
+}
+
+type FinancialTransaction @table {
+  amount: Float!
+  type: String!
+  description: String!
+  date: Timestamp!
+  relatedOrder: Order
+}
